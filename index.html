@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="scripts/listCountries.js" defer></script>
+    <script src="./scripts/Converter.js" defer></script>
+    <script src="./scripts/script.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <h1>Currency Converter</h1>
+    <div id="currencyBlock">
+        <form class="form" id="form">
+            <div class="box">
+                <label for="sumFrom" class="form-label">Amount</label>
+                <input type="number" class="form-control" id="sumFrom" placeholder="0.00">
+                <img src="./images/USD.png" alt="flag" class="imgFrom">
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="selectFrom">
+                    <option selected>USD</option>
+                </select>
+            </div>
+            <div class="box">
+                <span id="label">Сonvert to</span>
+                <div class="resultBlock">
+                    <span id="result"> </span>
+                </div>
+                <img src="./images/ILS.png" alt="flag" class="imgTo">
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="selectTo">
+                    <option selected>ILS</option>
+                </select>
+            </div>
+            <button type="button" id="formBtn" class="pressed-button">count</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
