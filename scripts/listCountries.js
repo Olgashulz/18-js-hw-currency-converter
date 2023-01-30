@@ -33,8 +33,6 @@ symbols = {
     "TRY": "Turkish Lira",
     "UAH": "Ukrainian Hryvnia",
     "USD": "United States Dollar",
-    "VND": "Vietnamese Dong",
-    "ZAR": "South African Rand",
 }
 
 function createSymbols() {
